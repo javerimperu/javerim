@@ -1,0 +1,91 @@
+body {
+    background-color: $color-negro;
+    color: $color-blanco;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    color: $color-azul;
+  }
+  
+  a {
+    color: $color-naranja;
+    text-decoration: none;
+  
+    &:hover {
+      color: $color-verde;
+    }
+  }
+  
+  .btn {
+    background-color: $color-verde;
+    color: $color-blanco;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+  
+    &:hover {
+      background-color: $color-naranja;
+    }
+  }
+  
+  .btn-primary {
+    background-color: $color-azul;
+  
+    &:hover {
+      background-color: $color-naranja;
+    }
+  }
+  
+  header {
+    background-color: $color-negro;
+    padding: 10px 0;
+    text-align: center;
+  
+    h1 {
+      color: $color-azul;
+    }
+  }
+  
+  main {
+    padding: 20px;
+  
+    section {
+      margin-bottom: 40px;
+  
+      &.bg-light {
+        background-color: $color-gris-claro; // Cambiado a gris claro
+        padding: 30px;
+        border-radius: 8px;
+  
+        h2, h3, p {
+          color: $color-gris-oscuro; // Texto oscuro en el fondo claro
+        }
+  
+        // Estilo específico para el formulario
+        form {
+          color: $color-gris-oscuro; // Color del texto del formulario
+        }
+      }
+    }
+  }
+  
+  footer {
+    background-color: darken($color-negro, 5%);
+    color: $color-blanco;
+    padding: 20px;
+    text-align: center;
+  
+    a {
+      color: $color-azul;
+  
+      &:hover {
+        color: $color-naranja;
+      }
+    }
+  }
